@@ -1,0 +1,6 @@
+#!name=SoundCloudPlus
+#!desc=SoundCloudPlus
+[Script]
+SoundCloudGo+=type=http-response,pattern=https://api-mobile.soundcloud.com/configuration/ios,requires-body=1,script-path=https://raw.githubusercontent.com/hungdoaifaketau/modules-shadowrocket/refs/heads/main/js/SoundCloud/soundcloud.js
+[MITM]
+hostname= %APPEND% api-mobile.soundcloud.com
